@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run C Program",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "'@compile_flags.txt'",
+                "main.c",
+                "-o",
+                "main.exe",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
